@@ -16,7 +16,7 @@ body {
 
 /** Header style*/
 header {
-  width: 100vw;
+  width: 100%;
   background: rgba(255, 144, 14, 0.1);
   text-align: center;
 }
@@ -53,7 +53,6 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
 .banner-info {
@@ -89,11 +88,62 @@ header {
 
 .banner-image {
   width: 100%;
-  height: 500px;
+  height: 700px;
   background-image: url(../images/banner.png);
-  background-repeat: no-repeat;
   border-radius: 8px;
   margin-top: 50px;
-  background-size: cover;
+  margin-bottom: 45px;
+  background-repeat: no-repeat;
 }
 
+/** Feature styles */
+
+.feature-container {
+  margin: 85px 300px 130px 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 70px;
+}
+
+.feature-image {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 24px;
+}
+
+.feature-image img {
+  width: 342px;
+  height: 342px;
+  border-radius: 8px;
+}
+
+.feature-info {
+  width: 535px;
+  
+}
+
+.feature-title {
+  font-weight: 700;
+  font-size: 45px;
+}
+
+.title-span {
+  font-weight: 500;
+  font-size: 45px;
+  color: var(--secondary-color);
+}
+
+.feature-span {
+  font-weight: 700;
+  font-size: 45px;
+  color: var(--primary-color);
+}
+
+.feature-description {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--secondary-color);
+  margin-bottom: 30px;
+  line-height: 26px;
+}
