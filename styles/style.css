@@ -230,3 +230,20 @@ header {
   font-weight: 500;
   font-size: 25px;
 }
+
+/** About facts style  */
+.fact-container {
+  margin-left: 240px;
+}
+
+.fact-title {
+  font-weight: 700;
+  font-size: 45px;
+}
+
+.fact-description {
+  font-weight: 400;
+  font-size: 16px;
+  width: 542px;
+  color: var(--secondary-color);
+}
