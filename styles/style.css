@@ -247,3 +247,37 @@ header {
   width: 542px;
   color: var(--secondary-color);
 }
+
+/** fact Icon styles */
+.fact-icon {
+  margin: 100px 300px 180px 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-card {
+  text-align: center;
+  box-sizing: border-box;
+  width: 241.83px;
+  height: 241.83px;
+  border: 1px solid #FF900E;
+  border-radius: 8px;
+  padding-top: 45px;
+}
+.icon-card:hover{
+  transform: rotate(90deg);
+}
+
+.icon-number {
+  font-weight: 600;
+  font-size: 45px;
+  color: #424242;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.icon-description {
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--secondary-color);
+}
