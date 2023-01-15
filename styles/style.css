@@ -13,7 +13,7 @@ body {
   background: #FFFFFF;
   color: #131313;
   font-family: 'Work Sans', sans-serif;
-  max-width: width: 1920px;
+  max-width: 1920px;
 }
 
 /** Header style*/
@@ -89,13 +89,13 @@ header {
 /** Banner Image style */
 
 .banner-image {
-  width: 100%;
-  height: 700px;
-  background-image: url(../images/banner.png);
   border-radius: 8px;
   margin-top: 50px;
   margin-bottom: 45px;
-  background-repeat: no-repeat;
+}
+
+.banner-image img {
+  width: 100%;
 }
 
 /** Feature styles */
@@ -177,12 +177,11 @@ header {
   margin-bottom: 30px;
 }
 
-.section-info-box {
+/* .section-info-box {
   /* display: grid;
   text-align: left;
-  grid-template-columns: repeat(1, 1fr); */
-
-}
+  grid-template-columns: repeat(1, 1fr); 
+}/*/
 
 .info-box {
   width: 586px;
@@ -206,9 +205,14 @@ header {
 }
 
 /** SEction Image */
-.section-image img {
+.section-image {
   width: 708px;
   height: 982px;
+}
+
+.section-image img {
+  width: 100%;
+  height: 100%;
   border-radius: 8px;
 }
 
@@ -330,16 +334,16 @@ header {
   border-radius: 8px;
   display: flex;
   align-items: center;
-  
+
 }
 
 .ad-title {
   font-weight: 700;
-  font-size: 45px;
+  font-size: 60px;
   color: #FFFFFF;
   width: 510px;
   margin-left: 65px;
-  line-height: 47px;
+  line-height: 65px;
 }
 
 /** Fotter Styles */
@@ -360,3 +364,171 @@ header {
 }
 
 /*! Media Queries */
+@media only screen and (max-width: 576px) {
+
+  /** Navbar */
+  .nav-container,
+  .nav-menu ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 50px 20px 50px;
+  }
+
+  .nav-title {
+    width: 257px;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 0;
+  }
+
+  .nav-menu ul {
+    padding: 0 50px 0 50px;
+    margin-bottom: 0px;
+  }
+
+  .nav-menu ul>li {
+    margin-left: 0;
+
+  }
+
+  /** Banner */
+
+  .banner-container,
+  .section-container,
+  .fact-container,.sponsor-container,.footer-container{
+    margin: auto 50px auto 50px;
+    text-align: center;
+  }
+
+  .banner-info,
+  .feature-info,
+  .section-container,
+  .section-detail,.sponsor-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 275px;
+  }
+
+  .banner-title,
+  .feature-title,
+  .section-title,
+  .fact-title,.sponsor-title{
+    width: 275px;
+    font-size: 28px;
+    line-height: 42px;
+    
+  }
+
+  .banner-description,
+  .feature-description,
+  .section-description,
+  .box-description,
+  .fact-description,.sponsor-description, .footer-title{
+    width: 320px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .primary-btn {
+    width: 160px;
+    height: 44px;
+    font-weight: 500;
+    font-size: 16px;
+
+  }
+
+  /** Banner Image */
+  .banner-image {
+    width: 257px;
+    height: 180px;
+    margin-bottom: 0px;
+
+  }
+
+  /** Features */
+  .feature-container {
+    flex-direction: column;
+    margin: 20px 50px 20px 50px;
+  }
+
+  .feature-image {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .feature-info {}
+
+  /** feature- detail */
+  .section-info,
+  .info-box ,.fact-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .section-info{
+    width: 275px;
+  }
+
+  .section-info .section-title {
+    border-left: none;
+    margin-top: 20px;
+    padding-left: 0px;
+    width: 275px;
+  }
+
+  .info-box {
+    width: 450px d
+  }
+  /** section image */
+  .section-image{
+    width: 576px;
+    height: 700px;
+  }
+  .section-image img{
+    width: 100%;
+    height: 100%;
+  }
+
+  /** fact */
+  .fact-title{
+    width: 275px;
+  }
+  .fact-description{
+    width: 290px;
+  }
+
+  .fact-icon{
+    margin: 20px 0 20px 0;
+    gap: 10px;
+  }
+
+  /** sponsar */
+  .sponsor-title{
+    width: 275px;
+  }
+  .sponsor-description{
+    margin-bottom: 20px;
+  }
+  .sponsor-logo{
+    gap: 25px;
+  }
+
+  .ad-section{
+    display: none;
+  }
+
+  /** Footer style */
+  .footer-container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .footer-title{
+    margin-bottom: 50px;
+  }
+
+}
