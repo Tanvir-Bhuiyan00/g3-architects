@@ -486,15 +486,20 @@ header {
   /** section image */
   .section-image{
     width: 576px;
-    height: 700px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .section-image img{
     width: 100%;
-    height: 100%;
+    height: 700px;
   }
 
   .section-image .primary-btn{
-    display: none;
+    position: static;
+    margin-top: 50px;
   }
 
   /** fact */
