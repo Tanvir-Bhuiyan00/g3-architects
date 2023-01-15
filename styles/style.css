@@ -13,6 +13,7 @@ body {
   background: #FFFFFF;
   color: #131313;
   font-family: 'Work Sans', sans-serif;
+  max-width: width: 1920px;
 }
 
 /** Header style*/
@@ -264,7 +265,8 @@ header {
   border-radius: 8px;
   padding-top: 45px;
 }
-.icon-card:hover{
+
+.icon-card:hover {
   transform: rotate(90deg);
 }
 
@@ -280,4 +282,56 @@ header {
   font-weight: 600;
   font-size: 20px;
   color: var(--secondary-color);
+}
+
+/** Sponsor styles */
+.sponsor-container {
+  margin: auto 240px 130px 240px;
+  text-align: center;
+}
+
+.sponsor-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsor-title {
+  font-weight: 700;
+  font-size: 45px;
+  margin-bottom: 0;
+}
+
+.sponsor-description {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--secondary-color);
+  width: 542px;
+  margin-bottom: 50px;
+  margin-top: 25px;
+}
+
+.sponsor-logo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  mix-blend-mode: luminosity;
+}
+
+/** Fotter Styles */
+.footer-container {
+  margin: auto 240px 215px 240px;
+  height: 100px;
+  background: #FFF4E7;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-title {
+  font-weight: 400;
+  font-size: 20px;
+  color: #424242;
 }
