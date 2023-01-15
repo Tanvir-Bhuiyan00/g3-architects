@@ -13,7 +13,6 @@ body {
   background: #FFFFFF;
   color: #131313;
   font-family: 'Work Sans', sans-serif;
-  max-width: 1920px;
 }
 
 /** Header style*/
@@ -528,7 +527,6 @@ header {
     margin-bottom: 50px;
   }
   .footer-title{
-    margin-bottom: 50px;
+    margin:auto;
   }
-
 }
