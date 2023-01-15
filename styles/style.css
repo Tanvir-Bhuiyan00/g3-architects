@@ -319,6 +319,29 @@ header {
   mix-blend-mode: luminosity;
 }
 
+/** ad section */
+.ad-section {
+  height: 300px;
+  margin: auto 240px 130px 240px;
+  background: linear-gradient(90deg, #FF900E 0%, rgba(0, 95, 172, 0) 100%),
+    url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.ad-title {
+  font-weight: 700;
+  font-size: 45px;
+  color: #FFFFFF;
+  width: 510px;
+  margin-left: 65px;
+  line-height: 47px;
+}
+
 /** Fotter Styles */
 .footer-container {
   margin: auto 240px 215px 240px;
@@ -335,3 +358,5 @@ header {
   font-size: 20px;
   color: #424242;
 }
+
+/*! Media Queries */
